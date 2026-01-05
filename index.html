@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jada Venkateswarao - Portfolio</title>
+
+  <!-- PARTICLES.JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body {
+      background: #0b0f19;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Background particle container */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a { color: #00eaff; margin-left: 20px; font-weight: 500; }
+
+    .hero {
+      text-align: center;
+      padding: 130px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 { font-size: 50px; font-weight: 700; }
+    .hero p { color: #cbd6ff; margin-top: 10px; }
+
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: auto;
+      padding-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin: 40px 0 15px;
+      border-left: 5px solid #00eaff;
+      padding-left: 10px;
+      animation: slideIn 1s ease;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #1f2937, #0f172a);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      transition: 0.3s;
+      backdrop-filter: blur(6px);
+      animation: fadeUp 1s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 238, 255, 0.4);
+    }
+
+    .grid { display: grid; gap: 20px; }
+    @media(min-width: 768px) { .grid-2 { grid-template-columns: repeat(2,1fr); } }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      background: rgba(255,255,255,0.05);
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+
+<body>
+
+<!-- PARTICLES BACKGROUND -->
+<div id="particles-js"></div>
+
+<!-- NAVIGATION -->
+<nav>
+  <h2>Venkateswarao</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Hi, I'm Jada Venkateswarao 👋</h1>
+  <p>Full Stack Developer • Java • SQL • OOPs • Frontend Developer</p>
+</section>
+
+<div class="container">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      I aim to secure a challenging position that helps me grow my skills while contributing 
+      to the organization’s success.
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Technical Skills</h3>
+        Java, SQL, OOPs
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        Problem Solving, Teamwork, Communication, Adaptability, Time Management
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+      <h3>Automatic Bridge Lifting System using IoT</h3>
+      Arduino-based automated bridge lifting system using water sensors.
+    </div>
+
+    <div class="card">
+      <h3>Liver Disorder Diagnosis Using Machine Learning</h3>
+      ML model to predict liver disorders using medical data & clinical parameters.
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+      <h3>B.Tech – CSE (2021–2025)</h3>
+      Vel Tech R&D Institute – CGPA: 8.1
+    </div>
+    <div class="card">
+      <h3>Intermediate – 91.2%</h3>
+      Sri Chaitanya Junior College
+    </div>
+    <div class="card">
+      <h3>SSC – GPA 9.3</h3>
+      Jaya Siddartha School
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card">
+      <p><strong>Phone:</strong> 7674893553</p>
+      <p><strong>Email:</strong> <a href="mailto:venkyjada836@gmail.com">venkyjada836@gmail.com</a></p>
+
+      <p><strong>LinkedIn:</strong>  
+        <a href="https://www.linkedin.com/in/jada-venkateswarao-537010324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          Click Here
+        </a>
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Jada Venkateswarao — Portfolio Website
+</footer>
+
+
+<!-- PARTICLES CONFIG -->
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 120 },
+    size: { value: 3 },
+    color: { value: "#00eaff" },
+    line_linked: { enable: true, distance: 150, color: "#00eaff" },
+    move: { speed: 2 }
+  }
+});
+</script>
+
+</body>
+</html>
